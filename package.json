@@ -1,28 +1,25 @@
 {
+  "exports": {
+    ".": {
+      "import": "./dist/peds-modules.js",
+      "require": "./dist/peds-modules.umd.cjs"
+    }
+  },
+  "files": ["dist"],
+  "main": "./dist/peds-modules.umd.cjs",
+  "module": "./dist/peds-modules.js",
   "name": "peds-modules",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
+  "type": "module",
+  "version": "0.0.0",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/web-zhangbo/peds-modules.git"
-  },
-  "keywords": [
-    "jy",
-    "peds"
-  ],
-  "author": "web_zhangbo",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/web-zhangbo/peds-modules/issues"
-  },
-  "homepage": "https://github.com/web-zhangbo/peds-modules#readme",
   "devDependencies": {
-    "webpack": "^5.74.0",
-    "webpack-cli": "^4.10.0"
+    "@types/node": "^18.7.14",
+    "typescript": "^4.5.4",
+    "vite": "^2.9.0"
   }
 }
