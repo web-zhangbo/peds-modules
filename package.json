@@ -1,13 +1,13 @@
 {
   "exports": {
     ".": {
-      "import": "./dist/peds-modules.js",
+      "import": "./dist/peds-modules.es.js",
       "require": "./dist/peds-modules.umd.cjs"
     }
   },
   "files": ["dist"],
   "main": "./dist/peds-modules.umd.cjs",
-  "module": "./dist/peds-modules.js",
+  "module": "./dist/peds-modules.es.js",
   "name": "peds-modules",
   "private": true,
   "type": "module",
